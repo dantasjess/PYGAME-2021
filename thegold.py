@@ -128,11 +128,6 @@ class Jogo:
                         self.fila.direcao = "cima"
                     if event.key == pygame.K_DOWN and self.fila.direcao != "cima":
                         self.fila.direcao = "baixo"
-                    if event.key == pygame.K_SPACE:
-                        self.pontuacao += 1
-                        pontuacao_fundo += 1
-                        self.fila.cresce()
-
 
             if self.jogando:
                 fundo.fill(self.fundo)
@@ -314,3 +309,4 @@ if __name__ == '__main__':
     instancia.menu()
 
 pygame.quit()
+
