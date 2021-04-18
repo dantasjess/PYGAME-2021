@@ -129,6 +129,7 @@ class Jogo:
                     if event.key == pygame.K_DOWN and self.fila.direcao != "cima":
                         self.fila.direcao = "baixo"
 
+
             if self.jogando:
                 fundo.fill(self.fundo)
                 if self.fila.direcao == "cima":
@@ -309,4 +310,3 @@ if __name__ == '__main__':
     instancia.menu()
 
 pygame.quit()
-
